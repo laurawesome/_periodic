@@ -1,0 +1,1988 @@
+<?xml version="1.0"?>
+
+<MOLECULE_NAMES>
+
+<MOLECULE>
+<SYMBOL>H2O</SYMBOL>
+<NAME>water</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KOH</SYMBOL>
+<NAME>potassium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaOH</SYMBOL>
+<NAME>sodium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2S</SYMBOL>
+<NAME>hydrogen sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ag2S</SYMBOL>
+<NAME>sulfur sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2O2</SYMBOL>
+<NAME>hydrogen peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2SO4</SYMBOL>
+<NAME>sulfuric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CH4</SYMBOL>
+<NAME>methane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCO3</SYMBOL>
+<NAME>calcium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NH3</SYMBOL>
+<NAME>ammonia</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>O2</SYMBOL>
+<NAME>oxygen</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>F2</SYMBOL>
+<NAME>flourine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>I2</SYMBOL>
+<NAME>iodine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>O3</SYMBOL>
+<NAME>ozone</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO</SYMBOL>
+<NAME>carbon monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ClO</SYMBOL>
+<NAME>chlorine monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaO</SYMBOL>
+<NAME>calcium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgO</SYMBOL>
+<NAME>magnesium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SO2</SYMBOL>
+<NAME>sulfur dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiO2</SYMBOL>
+<NAME>silicon dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TiO2</SYMBOL>
+<NAME>titanium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO2</SYMBOL>
+<NAME>carbon dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaCl</SYMBOL>
+<NAME>table salt</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HCl</SYMBOL>
+<NAME>hydrochloric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HF</SYMBOL>
+<NAME>hydroflouric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaF</SYMBOL>
+<NAME>sodium flouride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuO</SYMBOL>
+<NAME>copper oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnO</SYMBOL>
+<NAME>zinc oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SO3</SYMBOL>
+<NAME>sulfur trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NO</SYMBOL>
+<NAME>nitric oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>N2H4</SYMBOL>
+<NAME>Hydrazine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HN3</SYMBOL>
+<NAME>Hydrazoic acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HF</SYMBOL>
+<NAME>Hydrofluoric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HCl</SYMBOL>
+<NAME>Hydrochloric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HCl</SYMBOL>
+<NAME>Hydrochloric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2</SYMBOL>
+<NAME>Hydrogen</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2O2</SYMBOL>
+<NAME>Hydrogen peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2S</SYMBOL>
+<NAME>Hydrogen sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2O</SYMBOL>
+<NAME>Water"</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>He</SYMBOL>
+<NAME>Helium</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiBr</SYMBOL>
+<NAME>Lithium bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Li2CO3</SYMBOL>
+<NAME>Lithium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiCl</SYMBOL>
+<NAME>Lithium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiH</SYMBOL>
+<NAME>Lithium hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiOH</SYMBOL>
+<NAME>Lithium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiI</SYMBOL>
+<NAME>Lithium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiNO3</SYMBOL>
+<NAME>Lithium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Li3N</SYMBOL>
+<NAME>Lithium nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Li2SO4</SYMBOL>
+<NAME>Lithium sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BeH2</SYMBOL>
+<NAME>Beryllium hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BeI2</SYMBOL>
+<NAME>Beryllium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BeO</SYMBOL>
+<NAME>Beryllium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BCl3</SYMBOL>
+<NAME>Boron chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>B2H6</SYMBOL>
+<NAME>Boron hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BN</SYMBOL>
+<NAME>Boron nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>B2O3</SYMBOL>
+<NAME>Boron oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>B4C</SYMBOL>
+<NAME>Boron carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgB2</SYMBOL>
+<NAME>Magnesium diboride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H15B</SYMBOL>
+<NAME>Triethylborane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H4O</SYMBOL>
+<NAME>Acetaldehyde</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H4O2</SYMBOL>
+<NAME>Acetic acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H2</SYMBOL>
+<NAME>Acetylene</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C9H8O4</SYMBOL>
+<NAME>Aspirin</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H6</SYMBOL>
+<NAME>Benzene</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C4H10</SYMBOL>
+<NAME>Butane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C8H10N4O2</SYMBOL>
+<NAME>Caffine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCO3</SYMBOL>
+<NAME>Calcium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO2</SYMBOL>
+<NAME>Carbon dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO</SYMBOL>
+<NAME>Carbon monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CCl4</SYMBOL>
+<NAME>Carbon tetrachloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2CO3</SYMBOL>
+<NAME>Carbonic acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>COS</SYMBOL>
+<NAME>Carbonyl sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H6O</SYMBOL>
+<NAME>Ethanol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H6O2</SYMBOL>
+<NAME>Ethylene glycol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H12O6</SYMBOL>
+<NAME>Fructose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H12O6</SYMBOL>
+<NAME>Glucose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C3H8O</SYMBOL>
+<NAME>Isopropyl alcohol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CH4</SYMBOL>
+<NAME>Methane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C3H8</SYMBOL>
+<NAME>Propane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C20H24N2O2 </SYMBOL>
+<NAME>Quinine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C12H22O11</SYMBOL>
+<NAME>Sucrose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CBr4</SYMBOL>
+<NAME>Tetrabromomethane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C7HN4O2</SYMBOL>
+<NAME>Theobromine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H8O6</SYMBOL>
+<NAME>Vitamin c</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HNO3</SYMBOL>
+<NAME>Nitric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NCl3</SYMBOL>
+<NAME>Nitrogen tricloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NO2</SYMBOL>
+<NAME>Nitrogen dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NO</SYMBOL>
+<NAME>Nitric oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C3H5N3O9</SYMBOL>
+<NAME>Nitroglycerine</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>N2O</SYMBOL>
+<NAME>Nitrous oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaN3</SYMBOL>
+<NAME>Sodium azide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgNO3</SYMBOL>
+<NAME>Silver nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C7H5N3O6</SYMBOL>
+<NAME>Trinitrotoluene</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C4H10</SYMBOL>
+<NAME>Burning butane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CH4</SYMBOL>
+<NAME>Burning methane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C3H8</SYMBOL>
+<NAME>Burning propane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO</SYMBOL>
+<NAME>Carbon monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Cl</SYMBOL>
+<NAME>Chlorine ion/atom</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CO2</SYMBOL>
+<NAME>Carbon dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ClO</SYMBOL>
+<NAME>Chlorine monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Cr2O3</SYMBOL>
+<NAME>Chromium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H6O</SYMBOL>
+<NAME>Ethanol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C2H6O2</SYMBOL>
+<NAME>Ethylene glycol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H12O6</SYMBOL>
+<NAME>Fructose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C6H12O6</SYMBOL>
+<NAME>Glucose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2</SYMBOL>
+<NAME>Hydrogen</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2O2</SYMBOL>
+<NAME>Hydrogen peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C3H8O</SYMBOL>
+<NAME>Isopropyl alcohol</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgO</SYMBOL>
+<NAME>Magnesium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NO</SYMBOL>
+<NAME>Nitric oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>N2O</SYMBOL>
+<NAME>Nitrous oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>O3</SYMBOL>
+<NAME>Ozone</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na2O2</SYMBOL>
+<NAME>Sodium peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>C12H22O11</SYMBOL>
+<NAME>Sucrose</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2O</SYMBOL>
+<NAME>Water</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FSO3H</SYMBOL>
+<NAME>Fluorosulfuric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HF</SYMBOL>
+<NAME>Hydrofluoric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CF4</SYMBOL>
+<NAME>Polytetrafluoroethylene</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaF</SYMBOL>
+<NAME>Sodium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnF2</SYMBOL>
+<NAME>Stannous Fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SF6</SYMBOL>
+<NAME>Sulfur Hexafluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>XeF2</SYMBOL>
+<NAME>Xenon difluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaHCO3</SYMBOL>
+<NAME>Sodium bicarbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaBr</SYMBOL>
+<NAME>Sodium bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na2CO3</SYMBOL>
+<NAME>Sodium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaF</SYMBOL>
+<NAME>Sodium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaH</SYMBOL>
+<NAME>Sodium hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaOH</SYMBOL>
+<NAME>Sodium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaI</SYMBOL>
+<NAME>Sodium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaNO3</SYMBOL>
+<NAME>Sodium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na2O2</SYMBOL>
+<NAME>Sodium peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na2SiO3</SYMBOL>
+<NAME>Sodium silicate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na2SO4</SYMBOL>
+<NAME>Sodium sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Na3PO4</SYMBOL>
+<NAME>Trisodium phosphate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgBr2</SYMBOL>
+<NAME>Magnesium bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgCO3</SYMBOL>
+<NAME>Magnesium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgCl2</SYMBOL>
+<NAME>Magnesium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Mg(OH)2</SYMBOL>
+<NAME>Magnesium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgO</SYMBOL>
+<NAME>Magnesium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgSO4</SYMBOL>
+<NAME>Magnesium sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgAlO4</SYMBOL>
+<NAME>Magnesium aluminum oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlAs</SYMBOL>
+<NAME>Aluminium arsenide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlCl3</SYMBOL>
+<NAME>Aluminium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlF3</SYMBOL>
+<NAME>Aluminium flouride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlN</SYMBOL>
+<NAME>Aluminium nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Al2O3</SYMBOL>
+<NAME>Aluminium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiO2</SYMBOL>
+<NAME>Silica gel</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiC</SYMBOL>
+<NAME>Silicon carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiO2</SYMBOL>
+<NAME>Silicon dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaP2</SYMBOL>
+<NAME>Calcium phosphide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>P4</SYMBOL>
+<NAME>White phosphorous"</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdS</SYMBOL>
+<NAME>Cadmium sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuSO4</SYMBOL>
+<NAME>Copper sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>S2O2</SYMBOL>
+<NAME>Disulfur dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2S</SYMBOL>
+<NAME>Hydrogen sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeS2</SYMBOL>
+<NAME>Iron sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HgS</SYMBOL>
+<NAME>Mercury Sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SeS2</SYMBOL>
+<NAME>Selenium disulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ag2S</SYMBOL>
+<NAME>Silver sulfde</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SCl2</SYMBOL>
+<NAME>Sulfur dichloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SO2</SYMBOL>
+<NAME>Sulfur dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H2SO4</SYMBOL>
+<NAME>Sulfuric Acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnSO4</SYMBOL>
+<NAME>Zinc sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NH4Cl</SYMBOL>
+<NAME>Ammonium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BaCl2</SYMBOL>
+<NAME>Barium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BCl3</SYMBOL>
+<NAME>Boron chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCl2</SYMBOL>
+<NAME>Calcium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Cl</SYMBOL>
+<NAME>Chlorine ion/atom</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ClO2</SYMBOL>
+<NAME>Chlorine dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ClO</SYMBOL>
+<NAME>Chlorine monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CrO2Cl2</SYMBOL>
+<NAME>Chromyl chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoCl2</SYMBOL>
+<NAME>Cobalt chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HCL</SYMBOL>
+<NAME>Hydrochloric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HCl</SYMBOL>
+<NAME>Hydrochloric acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HOCl</SYMBOL>
+<NAME>Hypochlorous acid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiCl</SYMBOL>
+<NAME>Lithium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NCl3</SYMBOL>
+<NAME>Nitrogen tricloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KCl</SYMBOL>
+<NAME>Potassium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SCl2</SYMBOL>
+<NAME>Sulfur dichloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZrOCl</SYMBOL>
+<NAME>Zirconyl hydroxy chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KHCO3</SYMBOL>
+<NAME>Potassium bicarbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Kbr</SYMBOL>
+<NAME>Potassium bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>K2CO3</SYMBOL>
+<NAME>Potassium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KClO3</SYMBOL>
+<NAME>Potassium chlorate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KCl</SYMBOL>
+<NAME>Potassium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KOH</SYMBOL>
+<NAME>Potassium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Kl</SYMBOL>
+<NAME>Potassium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KNO3</SYMBOL>
+<NAME>Potassium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>K2O</SYMBOL>
+<NAME>Potassium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KClO4</SYMBOL>
+<NAME>Potassium perchlorate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaC2</SYMBOL>
+<NAME>Calcium carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCO3</SYMBOL>
+<NAME>Calcium carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCrO4</SYMBOL>
+<NAME>Calcium chromate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaF2</SYMBOL>
+<NAME>Calcium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaB6</SYMBOL>
+<NAME>Calcium hexaboride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaH2</SYMBOL>
+<NAME>Calcium hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ca(ClO)2</SYMBOL>
+<NAME>Calcium hypochlorite</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaI2</SYMBOL>
+<NAME>Calcium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaO</SYMBOL>
+<NAME>Calcium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaO2</SYMBOL>
+<NAME>Calcium peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaP2</SYMBOL>
+<NAME>Calcium phosphide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaSO4</SYMBOL>
+<NAME>Calcium sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaWO4</SYMBOL>
+<NAME>Calcium tengstate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCl2</SYMBOL>
+<NAME>Calcuim chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Sc2O3</SYMBOL>
+<NAME>Scandium (III) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ScCl3</SYMBOL>
+<NAME>Scandium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ScI3</SYMBOL>
+<NAME>Scandium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TiB2</SYMBOL>
+<NAME>Titanium boride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TiC</SYMBOL>
+<NAME>Titanium carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TiO2</SYMBOL>
+<NAME>Titanium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TiN</SYMBOL>
+<NAME>Titanium nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ti6Al4V</SYMBOL>
+<NAME>Titanium aluminum vanadium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>VC</SYMBOL>
+<NAME>Vanadium carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>VN</SYMBOL>
+<NAME>Vanadium nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>VCl4</SYMBOL>
+<NAME>Vanadium tetrachloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>VO2</SYMBOL>
+<NAME>Vandium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CrO2</SYMBOL>
+<NAME>Chromium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CrO3</SYMBOL>
+<NAME>Chromium trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MnO2</SYMBOL>
+<NAME>Manganese dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeSO4</SYMBOL>
+<NAME>Iron (II) sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Fe3O4</SYMBOL>
+<NAME>Iron (II,III) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Fe2O3</SYMBOL>
+<NAME>Iron (III) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeCl2</SYMBOL>
+<NAME>Iron chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeO</SYMBOL>
+<NAME>Iron oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeS2</SYMBOL>
+<NAME>Iron sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoCl2</SYMBOL>
+<NAME>Cobalt chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoPhO2</SYMBOL>
+<NAME>Cobalt phosphate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoO3Sn</SYMBOL>
+<NAME>Cobalt tin oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoCrMo</SYMBOL>
+<NAME>Cobalt chromium molybdenum alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoO</SYMBOL>
+<NAME>Colbalt oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiCoO2</SYMBOL>
+<NAME>Lithium cobalt oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuI</SYMBOL>
+<NAME>Copper iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuO</SYMBOL>
+<NAME>Copper oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuSO4</SYMBOL>
+<NAME>Copper sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnO</SYMBOL>
+<NAME>Zinc oxid</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnSO4</SYMBOL>
+<NAME>Zinc sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnTe</SYMBOL>
+<NAME>Zinc telluride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnCuSn</SYMBOL>
+<NAME>Zinc copper tin alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiGe</SYMBOL>
+<NAME>Silicon germanide alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SeO2</SYMBOL>
+<NAME>Selenium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SeS2</SYMBOL>
+<NAME>Selenium disulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgBr</SYMBOL>
+<NAME>Silver bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KrAr</SYMBOL>
+<NAME>Krypton argon mixture</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Rb2Te</SYMBOL>
+<NAME>Rubidium telluride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Sr(NO3)2</SYMBOL>
+<NAME>Strontium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZrCl4</SYMBOL>
+<NAME>Zirconium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZrO2</SYMBOL>
+<NAME>Zirconium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NbHfTi</SYMBOL>
+<NAME>Niobium hafnium titanium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MoS2</SYMBOL>
+<NAME>Molybdenum disulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MoO3</SYMBOL>
+<NAME>Molybdenum trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Rh2O3</SYMBOL>
+<NAME>Rhodium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PdAu</SYMBOL>
+<NAME>Palladium gold alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgBr</SYMBOL>
+<NAME>Silver bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgCl</SYMBOL>
+<NAME>Silver chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgONC</SYMBOL>
+<NAME>Silver fulminate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgI</SYMBOL>
+<NAME>Silver iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgNO3</SYMBOL>
+<NAME>Silver nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgO</SYMBOL>
+<NAME>Silver oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ag2S</SYMBOL>
+<NAME>Silver sulfde</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdSe</SYMBOL>
+<NAME>Cadmium selenide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdS</SYMBOL>
+<NAME>Cadmium sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdS</SYMBOL>
+<NAME>Cadmium sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdTe</SYMBOL>
+<NAME>Cadmuim teluride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>In2GaN2</SYMBOL>
+<NAME>Indium gallium nitride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>In2O3</SYMBOL>
+<NAME>Indium trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnCl2</SYMBOL>
+<NAME>Tin dichloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnCu</SYMBOL>
+<NAME>Tin copper alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnCuSbPb</SYMBOL>
+<NAME>Tin copper antimony lead alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnAg</SYMBOL>
+<NAME>Tin gold alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnZnBi</SYMBOL>
+<NAME>Tin zinc bismuth alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Sb2S3</SYMBOL>
+<NAME>Stibnite</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnSb5</SYMBOL>
+<NAME>Tin antimony alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Te3O2</SYMBOL>
+<NAME>Tellurium suboxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgI</SYMBOL>
+<NAME>Silver iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NaI</SYMBOL>
+<NAME>Sodium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Xe-Ne</SYMBOL>
+<NAME>Xenon neon mixture</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Ba(NO3)2</SYMBOL>
+<NAME>Barium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BaSO4</SYMBOL>
+<NAME>Barium sulfate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BaTiO3</SYMBOL>
+<NAME>Barium titanate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>2La2O</SYMBOL>
+<NAME>Lanthanum oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CeO2</SYMBOL>
+<NAME>Cerium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Nd2O3</SYMBOL>
+<NAME>Neodymium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NdPr</SYMBOL>
+<NAME>Neodymium praseodymium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Pm2O3</SYMBOL>
+<NAME>Promethium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Sm2O3</SYMBOL>
+<NAME>Samarium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NbHfTi</SYMBOL>
+<NAME>Niobium hafnium titanium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>WC</SYMBOL>
+<NAME>Tungsten carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>IrOs</SYMBOL>
+<NAME>Osmium iridium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>OsPt</SYMBOL>
+<NAME>Osmium platium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PtOs</SYMBOL>
+<NAME>Platinun osmium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AuCl</SYMBOL>
+<NAME>Gold monochloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HgS</SYMBOL>
+<NAME>Mercury sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TlI</SYMBOL>
+<NAME>Thallium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TlS</SYMBOL>
+<NAME>Thallium sulfide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TlHg</SYMBOL>
+<NAME>Thallium mercury alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbO2</SYMBOL>
+<NAME>Lead dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbF2</SYMBOL>
+<NAME>Lead fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbI2</SYMBOL>
+<NAME>Lead iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbO</SYMBOL>
+<NAME>Lead oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbTe</SYMBOL>
+<NAME>Lead teluride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BiOCl</SYMBOL>
+<NAME>Bismuth Oxychloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Bi2O3</SYMBOL>
+<NAME>Bismuth trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PoO2</SYMBOL>
+<NAME>Polonium Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ThF4</SYMBOL>
+<NAME>Thorium Flouride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ThO2</SYMBOL>
+<NAME>Thorium Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>U3O8</SYMBOL>
+<NAME>Triuranium octoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>UO2</SYMBOL>
+<NAME>Uranium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>UO2(NO3)2</SYMBOL>
+<NAME>Uranium nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>UO3</SYMBOL>
+<NAME>Uranium trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AmCl3</SYMBOL>
+<NAME>Americium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AgN3</SYMBOL>
+<NAME>silver azide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlSc</SYMBOL>
+<NAME>Aluminum-scandium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AuF3</SYMBOL>
+<NAME>gold(lll) fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BaF2</SYMBOL>
+<NAME>barium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BeCl2</SYMBOL>
+<NAME>beryllium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>BiO2</SYMBOL>
+<NAME>Bismuth Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CHClF2</SYMBOL>
+<NAME>Chlorodifluoromethane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CNO</SYMBOL>
+<NAME>cyanate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CaCN2</SYMBOL>
+<NAME>Chlorodifluoromethane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CdO</SYMBOL>
+<NAME>cadmium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Co3O4</SYMBOL>
+<NAME>cobalt(ll,lll) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CoAl2O4</SYMBOL>
+<NAME>Cobalt aluminum oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CsOH</SYMBOL>
+<NAME>Caesium hydroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuCO3</SYMBOL>
+<NAME>copper(ll) carbonate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CuI2</SYMBOL>
+<NAME>copper(l) iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>DyOF2</SYMBOL>
+<NAME>Dysprosium oxide fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Er2O3</SYMBOL>
+<NAME>erbium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Es2O3</SYMBOL>
+<NAME>einsteinium (lll) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Eu2O3</SYMBOL>
+<NAME>europium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>FeV</SYMBOL>
+<NAME>Ferrovanadium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>GaAs</SYMBOL>
+<NAME>gallium arsenide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>GaInP</SYMBOL>
+<NAME>gallium indium phosphide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Gd2O3</SYMBOL>
+<NAME>gadolinium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>GeO2</SYMBOL>
+<NAME>germanium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>H3BO3</SYMBOL>
+<NAME>boric acide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>HgC2N2O2</SYMBOL>
+<NAME>mercury fulminate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>K2O2</SYMBOL>
+<NAME>potassium peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KBr</SYMBOL>
+<NAME>potassium bromide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KI</SYMBOL>
+<NAME>potassium iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>KrF</SYMBOL>
+<NAME>krypton fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LiAlH4</SYMBOL>
+<NAME>Lithium aluminium hydride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Lu2O3</SYMBOL>
+<NAME>Lutetium Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MnCl2</SYMBOL>
+<NAME>Manganese(ll) chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MoSi2</SYMBOL>
+<NAME>Molybdenum Disilicide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NH4TcO4</SYMBOL>
+<NAME>ammonium pertechnetate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NO3</SYMBOL>
+<NAME>nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NdCl3</SYMBOL>
+<NAME>neodymium(lll) chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NpO2</SYMBOL>
+<NAME>neptunium dioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>OsO4</SYMBOL>
+<NAME>Osmium tetroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>P2O7</SYMBOL>
+<NAME>Calcium phosphate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PaO2</SYMBOL>
+<NAME>Protactinium(iv) Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbN6</SYMBOL>
+<NAME>lead azide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PbSn</SYMBOL>
+<NAME>tin-lead alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PdCl2</SYMBOL>
+<NAME>Palladium(ll) chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PmCl3</SYMBOL>
+<NAME>promethium trichloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PtCo</SYMBOL>
+<NAME>Platinum-cobalt alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PuC</SYMBOL>
+<NAME>plutonium carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PuC2</SYMBOL>
+<NAME>plutonium dicarbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PuC3</SYMBOL>
+<NAME>plutonium tricarbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PuO2</SYMBOL>
+<NAME>Plutonium(iv) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>RbNO3</SYMBOL>
+<NAME>Rubidium Nitrate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ReW</SYMBOL>
+<NAME>Rhenium-tungsten alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>RuPtPd</SYMBOL>
+<NAME>Ruthenium-platinum-palladium alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SO</SYMBOL>
+<NAME>sulphur oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Sb2O3</SYMBOL>
+<NAME>Antimony trioxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SiH4</SYMBOL>
+<NAME>silane</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SmCo5</SYMBOL>
+<NAME>Samarium cobalt</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SrCl2</SYMBOL>
+<NAME>Strontium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SrN2O6</SYMBOL>
+<NAME>Strontium Peroxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TaO</SYMBOL>
+<NAME>tantalum monoxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Tb4O7</SYMBOL>
+<NAME>Terbium(iii, iv) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TlCl</SYMBOL>
+<NAME>Thallium Chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Tm2O3</SYMBOL>
+<NAME>thulium(lll) oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Y2O3</SYMBOL>
+<NAME>Yttrium Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Yb2O3</SYMBOL>
+<NAME>Ytterbium Oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZnCl2</SYMBOL>
+<NAME>Zinc Chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZrC</SYMBOL>
+<NAME>zirconium carbide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>ZrOHCl</SYMBOL>
+<NAME>Zirconyl hydroxy chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>Rn2</SYMBOL>
+<NAME>test molecule</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AmF3</SYMBOL>
+<NAME>Americium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AmF4</SYMBOL>
+<NAME>americium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>NI3</SYMBOL>
+<NAME>nitrogen triiodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>MgAl</SYMBOL>
+<NAME>magnesium aluminum alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>EsI2</SYMBOL>
+<NAME>Einsteineum Iodide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CmF3</SYMBOL>
+<NAME>curium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LaO3</SYMBOL>
+<NAME>lanthanum oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>TeO6</SYMBOL>
+<NAME>tellurium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>LuO3</SYMBOL>
+<NAME>lutetium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AmCl2</SYMBOL>
+<NAME>americium chloride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CmF4</SYMBOL>
+<NAME>curium fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>CmO</SYMBOL>
+<NAME>curium oxide</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>AlSb</SYMBOL>
+<NAME>aluminum antimony alloy</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>EsF3</SYMBOL>
+<NAME>Einsteineum fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>EsF4</SYMBOL>
+<NAME>Einsteineum fluoride</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>PO4</SYMBOL>
+<NAME>phosphate</NAME>
+</MOLECULE>
+
+<MOLECULE>
+<SYMBOL>SnCuZn</SYMBOL>
+<NAME>tin copper zinc alloy</NAME>
+</MOLECULE>
+
+
+
+</MOLECULE_NAMES>
+

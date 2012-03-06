@@ -22,7 +22,7 @@
 			<canvas id="canvas" width="1000" height="700">
 				your browser does not support the canvas tag
 			</canvas>
-			<video id="vid" controls width="270" hidden= "hidden" >
+			<video id="vid" controls width="270" style="visibility: hidden;" >
 				<source src="bbb.ogg" type='video/ogg' >
 				<source src="bbb.mp4" type='video/mp4' >
 			</video>
@@ -42,6 +42,8 @@
 			var canY;
 			var mouseIsDown = 0;
 			var ready = 0;
+			var congrats = "Congratulations you found ";
+			var playing = 0;
 
 			function init() {
 				console.log('init');
@@ -52,9 +54,13 @@
 				readReactions();
 				draw();
 				v.addEventListener('ended', function() {
-							 console.log("hide this shit");
-							 ready=0;
-						}, false);  
+					ready = 0;
+					rElements.splice(0, rElements.length);
+					draw();
+					playing=0;
+					congrats="Congratulations you found ";
+
+				}, false);
 				canvas.addEventListener("mousedown", mouseDown, false);
 				canvas.addEventListener("mousemove", mouseXY, true);
 				canvas.addEventListener("touchstart", touchDown, false);
@@ -112,27 +118,27 @@
 
 					reactions[i].eArray = reactions[i].e.split(",");
 					copyofReaction = reactions[i].e.split(",");
-					console.log("Begin comparison ")
+					//console.log("Begin comparison ")
 					for( j = 0; j < reactions[i].eArray.length; j++) {
 						for( k = 0; k < listofElements.length; k++) {
 
 							if(listofElements[k].symbol == copyofReaction[j]) {
-								console.log(copyofReaction.length + " " + k);
-								console.log(reactions[i].e);
+								//	console.log(copyofReaction.length + " " + k);
+								//	console.log(reactions[i].e);
 
 								copyofReaction.splice(j, 1);
 
-								console.log("removed " + listofElements[k].symbol);
-								console.log("left " + copyofReaction.length);
+								//	console.log("removed " + listofElements[k].symbol);
+								//	console.log("left " + copyofReaction.length);
 
 								if(copyofReaction.length == 0) {
 									console.log("found match");
-									var congrats = "Congratulations you found ";
-									congrats = congrats + reactions[i].molecule;
-									console.log(congrats);
+									var c = reactions[i].molecule;
+
+									console.log(c);
 									ready = 1;
 									v.play();
-									playVideo();
+									playVideo(c);
 									break;
 								} else
 									continue;
@@ -142,16 +148,22 @@
 				}
 			}
 
-			function playVideo() {
+			function playVideo(c) {
+
 				if(ready == 1) {
-					pt.fillStyle="black";
-					pt.fillRect(498,358,324,244);
+					if(playing == 0) {
+						congrats= congrats + c;
+					}
+
+					pt.font = "25px Arial";
+					pt.fillStyle = "black";
+					pt.fillText(congrats, 200, 50);
+					pt.fillRect(498, 358, 324, 244);
 					pt.drawImage(v, 500, 360, 320, 240);
+					playing=1;
+			
+
 				}
-
-			}
-
-			function findName() {
 
 			}
 
@@ -259,9 +271,10 @@
 						elements[i].y = elements[i].pY;
 					}
 					elements[i].dragok = false;
-				}
-				if(rElements.length > 1) {
-					checkReactions();
+
+					if(rElements.length > 1) {
+						checkReactions();
+					}
 				}
 				for( i = 0; i < rElements.length; i++) {
 					if(rElements[i].dragok == true) {
@@ -403,8 +416,8 @@
 					}
 
 				}
-				if(ready==0){
-				showPos();
+				if(ready == 0) {
+					showPos();
 				}
 
 			}
@@ -437,20 +450,7 @@
 
 			function showPos() {
 				// large, centered, bright green text
-				pt.font = "24pt Helvetica";
 
-				pt.fillStyle = "rgb(64,255,64)";
-				var str = canX + ", " + canY;
-				if(mouseIsDown)
-					str = str + " down";
-				if(!mouseIsDown)
-					str = str + " up";
-				//pt.clearRect(0, 0, canvas.width, canvas.height);
-				// draw text at center, max length to fit on canvas
-				//pt.fillText(str, canvas.width / 2, canvas.height / 2, canvas.width - 10);
-				// plot cursorv
-				pt.fillStyle = "black";
-				pt.fillRect(canX - 5, canY - 5, 10, 10);
 				draw();
 			}
 		</script>
