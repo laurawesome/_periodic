@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Periodic Table</title>
+		<meta name="description" content="" />
+		<meta name="author" content="laura" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+	</head>
+	<body onload="init();">
+		<header></header>
+		<nav></nav>
+		<div>
+			<canvas id="canvas" width="1000" height="700">
+				your browser does not support the canvas tag
+			</canvas>
+			<video id="vid" controls width="270" hidden= "hidden" >
+				<source src="bbb.ogg" type='video/ogg' >
+				<source src="bbb.mp4" type='video/mp4' >
+			</video>
+		</div>
+		<script type="text/javascript">
+			var canvas;
+			var pt;
+			var eSize = 50;
+			var WIDTH = 1000;
+			var HEIGHT = 700;
+			var elements = new Array();
+			var rElements = new Array();
+			var reactions = new Array();
+			var v = document.getElementById("vid");
+			v.addEventListener('loadeddata', init, false);
+			var canX;
+			var canY;
+			var mouseIsDown = 0;
+			var ready = 0;
+
+			function init() {
+				console.log('init');
+				setInterval(playVideo, 20);
+				canvas = document.getElementById("canvas");
+				pt = canvas.getContext("2d");
+				readXML();
+				readReactions();
+				draw();
+				v.addEventListener('ended', function() {
+							 console.log("hide this shit");
+							 ready=0;
+						}, false);  
+				canvas.addEventListener("mousedown", mouseDown, false);
+				canvas.addEventListener("mousemove", mouseXY, true);
+				canvas.addEventListener("touchstart", touchDown, false);
+				canvas.addEventListener("touchmove", touchXY, true);
+				canvas.addEventListener("touchend", touchUp, false);
+
+				document.body.addEventListener("mouseup", mouseUp, false);
+				document.body.addEventListener("touchcancel", touchUp, false);
+			}
+
+			function clear() {
+				pt.clearRect(0, 0, WIDTH, HEIGHT);
+			}
+
+			function draw() {
+				clear();
+
+				pt.strokeRect(50, 400, 400, 200);
+
+				//console.log('drawing ' + elements.length);
+				for(var i = 0; i < elements.length; i++) {
+					pt.fillStyle = rgb(elements[i].red, elements[i].green, elements[i].blue);
+					pt.fillRect(elements[i].x - (eSize / 2), elements[i].y - (eSize / 2), eSize - 1, eSize - 1);
+					pt.fillStyle = "black";
+					pt.font = "15px Arial";
+					pt.fillText(elements[i].symbol, elements[i].x - (eSize / 2) + 5, elements[i].y - (eSize / 2) + 20);
+					pt.font = "8px Arial";
+					pt.fillText(elements[i].name, elements[i].x - (eSize / 2) + 5, elements[i].y - (eSize / 2) + 35);
+				}
+				//console.log("rElements " + rElements.length)
+				for(var i = 0; i < rElements.length; i++) {
+					//
+					pt.fillStyle = rgb(rElements[i].red, rElements[i].green, rElements[i].blue);
+					pt.fillRect(rElements[i].x - (eSize / 2), rElements[i].y - (eSize / 2), eSize - 1, eSize - 1);
+					pt.fillStyle = "black";
+					pt.font = "15px Arial";
+					pt.fillText(rElements[i].symbol, rElements[i].x - (eSize / 2) + 5, rElements[i].y - (eSize / 2) + 20);
+					pt.font = "8px Arial";
+					pt.fillText(rElements[i].name, rElements[i].x - (eSize / 2) + 5, rElements[i].y - (eSize / 2) + 35);
+				}
+
+			}
+
+			function checkReactions() {
+				var listofElements = new Array();
+				var copyofReaction = new Array();
+				for( i = 0; i < rElements.length; i++) {
+					var l = rElements[i];
+
+					listofElements.push(l);
+
+				}
+
+				for( i = 0; i < reactions.length; i++) {
+
+					reactions[i].eArray = reactions[i].e.split(",");
+					copyofReaction = reactions[i].e.split(",");
+					console.log("Begin comparison ")
+					for( j = 0; j < reactions[i].eArray.length; j++) {
+						for( k = 0; k < listofElements.length; k++) {
+
+							if(listofElements[k].symbol == copyofReaction[j]) {
+								console.log(copyofReaction.length + " " + k);
+								console.log(reactions[i].e);
+
+								copyofReaction.splice(j, 1);
+
+								console.log("removed " + listofElements[k].symbol);
+								console.log("left " + copyofReaction.length);
+
+								if(copyofReaction.length == 0) {
+									console.log("found match");
+									var congrats = "Congratulations you found ";
+									congrats = congrats + reactions[i].molecule;
+									console.log(congrats);
+									ready = 1;
+									v.play();
+									playVideo();
+									break;
+								} else
+									continue;
+							}
+						}
+					}
+				}
+			}
+
+			function playVideo() {
+				if(ready == 1) {
+					pt.fillStyle="black";
+					pt.fillRect(498,358,324,244);
+					pt.drawImage(v, 500, 360, 320, 240);
+				}
+
+			}
+
+			function findName() {
+
+			}
+
+			function readReactions() {
+				if(window.XMLHttpRequest) {
+					xmlhttp = new XMLHttpRequest();
+				}
+
+				xmlhttp.open("GET", "reactions.xml", false);
+				xmlhttp.send();
+				xmlDoc = xmlhttp.responseXML;
+
+				var x = xmlDoc.getElementsByTagName("REACTION");
+				for( i = 0; i < x.length; i++) {
+
+					var e = (x[i].getElementsByTagName("ELEMENTS")[0].childNodes[0].nodeValue);
+					var m = (x[i].getElementsByTagName("MOLECULE")[0].childNodes[0].nodeValue);
+					var r = new Reaction(e, m);
+					reactions.push(r);
+
+				}
+			}
+
+			function readXML() {
+				if(window.XMLHttpRequest) {
+					xmlhttp = new XMLHttpRequest();
+				}
+
+				xmlhttp.open("GET", "periodic.xml", false);
+				xmlhttp.send();
+				xmlDoc = xmlhttp.responseXML;
+
+				var x = xmlDoc.getElementsByTagName("ATOM");
+				for( i = 0; i < x.length; i++) {
+
+					var xPos = (x[i].getElementsByTagName("XPOS")[0].childNodes[0].nodeValue);
+					var yPos = (x[i].getElementsByTagName("YPOS")[0].childNodes[0].nodeValue);
+					var sym = (x[i].getElementsByTagName("SYMBOL")[0].childNodes[0].nodeValue);
+					var name = (x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+					var r = (x[i].getElementsByTagName("RED")[0].childNodes[0].nodeValue);
+					var g = (x[i].getElementsByTagName("GREEN")[0].childNodes[0].nodeValue);
+					var b = (x[i].getElementsByTagName("BLUE")[0].childNodes[0].nodeValue);
+					var e = new Element(xPos, yPos, r, g, b, name, sym);
+					elements.push(e);
+
+				}
+
+			}
+
+			function Reaction(e, m) {
+				this.e = e.toString();
+				this.molecule = m;
+
+				this.eArray = new Array();
+
+			}
+
+			function Element(xIn, yIn, r, g, b, n, s) {
+
+				this.pX = xIn;
+				this.pY = yIn;
+				this.red = r;
+				this.green = g;
+				this.blue = b;
+				this.name = n;
+				this.symbol = s;
+
+				this.x = xIn * eSize;
+				this.y = yIn * eSize;
+
+				var dragok = false;
+			}
+
+			function rElement(pX, pY, x, y, r, g, b, n, s) {
+
+				this.pX = pX;
+				this.pY = pY;
+				this.red = r;
+				this.green = g;
+				this.blue = b;
+				this.name = n;
+				this.symbol = s;
+
+				this.x = x;
+				this.y = y;
+
+				var dragok = false;
+			}
+
+			function rgb(r, g, b) {
+				var f = Math.floor;
+				return "rgb(" + f(r) + "," + f(g) + "," + f(b) + ")";
+			}
+
+			function mouseUp() {
+				mouseIsDown = 0;
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == true) {
+						if(canX > 50 && canX < 450 && canY > 400 && canY < 600) {
+
+							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
+							rElements.push(r);
+						}
+						elements[i].x = elements[i].pX;
+						elements[i].y = elements[i].pY;
+					}
+					elements[i].dragok = false;
+				}
+				if(rElements.length > 1) {
+					checkReactions();
+				}
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == true) {
+
+						if(rElements[i].x < 50 || rElements[i].x > 450 || rElements[i].y < 400 || rElements[i].y > 600) {
+
+							rElements.splice(i, 1);
+						} else {
+							rElements[i].dragok = false;
+						}
+
+					}
+				}
+				showPos();
+			}
+
+			function touchUp() {
+				mouseIsDown = 0;
+				// no touch to track, so just show state
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == true) {
+						if(canX > 50 && canX < 450 && canY > 400 && canY < 600) {
+
+							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
+							rElements.push(r);
+						}
+						elements[i].x = elements[i].pX;
+						elements[i].y = elements[i].pY;
+					}
+					elements[i].dragok = false;
+				}
+				if(rElements.length > 1) {
+					checkReactions();
+				}
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == true) {
+
+						if(rElements[i].x < 50 || rElements[i].x > 450 || rElements[i].y < 400 || rElements[i].y > 600) {
+
+							rElements.splice(i, 1);
+						} else {
+							rElements[i].dragok = false;
+						}
+
+					}
+				}
+				showPos();
+			}
+
+			function mouseDown() {
+				mouseIsDown = 1;
+
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == false) {
+						console.log("mouse: " + canX + " " + canY + " element " + rElements[i].x + " " + rElements[i].y);
+						if(canX < rElements[i].x + eSize / 2 && canX > rElements[i].x - eSize / 2 && canY < rElements[i].y + eSize / 2 && canY > rElements[i].y - eSize / 2) {
+
+							rElements[i].pX = rElements[i].x;
+							rElements[i].pY = rElements[i].y;
+
+							rElements[i].x = canX;
+							rElements[i].y = canY;
+
+							rElements[i].dragok = true;
+
+						}
+					}
+				}
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == false) {
+						if(canX < elements[i].x + eSize / 2 && canX > elements[i].x - eSize / 2 && canY < elements[i].y + eSize / 2 && canY > elements[i].y - eSize / 2) {
+							elements[i].pX = elements[i].x;
+							elements[i].pY = elements[i].y;
+
+							elements[i].x = canX;
+							elements[i].y = canY;
+
+							elements[i].dragok = true;
+
+						}
+					}
+				}
+
+				mouseXY();
+			}
+
+			function touchDown() {
+				mouseIsDown = 1;
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == false) {
+						if(canX < rElements[i].x + eSize / 2 && canX > rElements[i].x - eSize / 2 && canY < rElements[i].y + eSize / 2 && canY > rElements[i].y - eSize / 2) {
+
+							rElements[i].pX = rElements[i].x;
+							rElements[i].pY = rElements[i].y;
+
+							rElements[i].x = canX;
+							rElements[i].y = canY;
+
+							rElements[i].dragok = true;
+
+						}
+					}
+				}
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == false) {
+						if(canX < elements[i].x + eSize / 2 && canX > elements[i].x - eSize / 2 && canY < elements[i].y + eSize / 2 && canY > elements[i].y - eSize / 2) {
+							elements[i].pX = elements[i].x;
+							elements[i].pY = elements[i].y;
+
+							elements[i].x = canX;
+							elements[i].y = canY;
+
+							elements[i].dragok = true;
+
+						}
+					}
+				}
+				touchXY();
+			}
+
+			function mouseXY(e) {
+				if(!e)
+					var e = event;
+				canX = e.pageX - canvas.offsetLeft;
+				canY = e.pageY - canvas.offsetTop;
+				if(mouseIsDown) {
+
+					for( j = 0; j < rElements.length; j++) {
+						if(rElements[j].dragok) {
+							rElements[j].x = canX;
+							rElements[j].y = canY;
+						}
+					}
+					for( j = 0; j < elements.length; j++) {
+						if(elements[j].dragok) {
+							elements[j].x = canX;
+							elements[j].y = canY;
+						}
+					}
+
+				}
+				if(ready==0){
+				showPos();
+				}
+
+			}
+
+			function touchXY(e) {
+				if(!e)
+					var e = event;
+				e.preventDefault();
+				canX = e.targetTouches[0].pageX - canvas.offsetLeft;
+				canY = e.targetTouches[0].pageY - canvas.offsetTop;
+				if(mouseIsDown) {
+
+					for( j = 0; j < rElements.length; j++) {
+						if(rElements[j].dragok) {
+							rElements[j].x = canX;
+							rElements[j].y = canY;
+						}
+					}
+					for( j = 0; j < elements.length; j++) {
+						if(elements[j].dragok) {
+							elements[j].x = canX;
+							elements[j].y = canY;
+						}
+					}
+
+				}
+				showPos();
+
+			}
+
+			function showPos() {
+				// large, centered, bright green text
+				pt.font = "24pt Helvetica";
+
+				pt.fillStyle = "rgb(64,255,64)";
+				var str = canX + ", " + canY;
+				if(mouseIsDown)
+					str = str + " down";
+				if(!mouseIsDown)
+					str = str + " up";
+				//pt.clearRect(0, 0, canvas.width, canvas.height);
+				// draw text at center, max length to fit on canvas
+				//pt.fillText(str, canvas.width / 2, canvas.height / 2, canvas.width - 10);
+				// plot cursorv
+				pt.fillStyle = "black";
+				pt.fillRect(canX - 5, canY - 5, 10, 10);
+				draw();
+			}
+		</script>
+		<footer></footer>
+	</body>
+</html>
