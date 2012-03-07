@@ -22,10 +22,10 @@
 			<canvas id="canvas" >
 				your browser does not support the canvas tag
 			</canvas>
-			<video id="vid" controls width="270" style="visibility: hidden;" >
-				<source src="bbb.ogg" type='video/ogg' >
-				<source src="bbb.mp4" type='video/mp4' >
-			</video>
+			<!--	<video id="vid" controls width="270"   style="visibility: hidden;">
+			<source src="bbb.ogg" type='video/ogg' >
+			<source src="bbb.mp4" type='video/mp4' >
+			</video> -->
 		</div>
 		<script type="text/javascript">
 			var canvas;
@@ -36,8 +36,13 @@
 			var elements = new Array();
 			var rElements = new Array();
 			var reactions = new Array();
-			var v = document.getElementById("vid");
-			v.addEventListener('loadeddata', init, false);
+			var video = document.createElement('video');
+			document.body.appendChild(video);
+
+			//	video.addEventListener('loadeddata', init, false);
+
+			video.style.position = 'absolute';
+
 			var canX;
 			var canY;
 			var mouseIsDown = 0;
@@ -46,14 +51,14 @@
 			var playing = 0;
 			var previousOrientation = 0;
 			window.onorientationchange = checkOrientation;
-			
+
 			var rAreaX;
 			var rAreaY;
 			var rAreaW;
 			var rAreaH;
-			
+
 			function init() {
-		//	
+				//
 				console.log('init');
 				setInterval(playVideo, 20);
 				canvas = document.getElementById("canvas");
@@ -61,15 +66,18 @@
 				pt.canvas.width = WIDTH;
 				pt.canvas.height = HEIGHT;
 				eSize = (window.innerWidth / 20);
-				rAreaX=eSize;
-				rAreaY=eSize * 8;
-				rAreaW=eSize * 8;
-				rAreaH=eSize * 4;
-			
+				rAreaX = eSize;
+				rAreaY = eSize * 8;
+				rAreaW = eSize * 8;
+				rAreaH = eSize * 4;
+
+				video.height = rAreaH;
+				video.width = rAreaW;
+
 				readXML();
 				readReactions();
 				draw();
-				v.addEventListener('ended', movieEnded, false);
+				video.addEventListener('ended', movieEnded, false);
 				canvas.addEventListener("mousedown", mouseDown, false);
 				canvas.addEventListener("mousemove", mouseXY, true);
 				canvas.addEventListener("touchstart", touchDown, false);
@@ -87,35 +95,35 @@
 			}
 
 			function movieEnded() {
-					ready = 0;
-					rElements.splice(0, rElements.length);
-					draw();
-					playing = 0;
-					congrats = "Congratulations you found ";
-				}
-				
-			
+				ready = 0;
+				rElements.splice(0, rElements.length);
+				draw();
+				playing = 0;
+				congrats = "Congratulations you found ";
+				video.style.top = (WIDTH.toString() +"px");
+				video.style.left=(HEIGHT.toString()+"px");
+			}
+
 			function checkOrientation() {
-			
-				elements.splice(0,elements.length);
-				rElements.splice(0,elements.length);
+
+				elements.splice(0, elements.length);
+				rElements.splice(0, elements.length);
 				WIDTH = window.innerWidth;
 				HEIGHT = window.innerHeight;
 				pt.canvas.width = window.innerWidth;
 				pt.canvas.height = window.innerHeight;
 				eSize = (window.innerWidth / 20);
-						rAreaX=eSize;
-				rAreaY=eSize * 8;
-				rAreaW=eSize * 8;
-				rAreaH=eSize * 4;
+				rAreaX = eSize;
+				rAreaY = eSize * 8;
+				rAreaW = eSize * 8;
+				rAreaH = eSize * 4;
 				readXML();
-				draw();			
+				draw();
 			}
 
 			function draw() {
 				clear();
-				
-				
+
 				pt.strokeRect(rAreaX, rAreaY, rAreaW, rAreaH);
 
 				//console.log('drawing ' + elements.length);
@@ -124,11 +132,11 @@
 					pt.fillRect(elements[i].x - (eSize / 2), elements[i].y - (eSize / 2), eSize - 1, eSize - 1);
 					pt.fillStyle = "black";
 					pt.font = "15px Arial";
-					pt.fillText(elements[i].symbol, elements[i].x - (eSize / 2) + 5, elements[i].y - (eSize / 2) + 20);
-					if(eSize>49){
-					pt.font = "8px Arial";
-					pt.fillText(elements[i].name, elements[i].x - (eSize / 2) + 5, elements[i].y - (eSize / 2) + 35);
-				}
+					pt.fillText(elements[i].symbol, elements[i].x - (eSize / 2) + eSize / 10, elements[i].y - (eSize / 2) + eSize / 2);
+					if(eSize > 49) {
+						pt.font = "8px Arial";
+						pt.fillText(elements[i].name, elements[i].x - (eSize / 2) + eSize / 10, elements[i].y - (eSize / 2) + (eSize / 2 + eSize / 10));
+					}
 				}
 				//console.log("rElements " + rElements.length)
 				for(var i = 0; i < rElements.length; i++) {
@@ -137,10 +145,10 @@
 					pt.fillRect(rElements[i].x - (eSize / 2), rElements[i].y - (eSize / 2), eSize - 1, eSize - 1);
 					pt.fillStyle = "black";
 					pt.font = "15px Arial";
-					pt.fillText(rElements[i].symbol, rElements[i].x - (eSize / 2) + 5, rElements[i].y - (eSize / 2) + 20);
-					if(eSize>49){
-					pt.font = "8px Arial";
-					pt.fillText(rElements[i].name, rElements[i].x - (eSize / 2) + 5, rElements[i].y - (eSize / 2) + 35);
+					pt.fillText(rElements[i].symbol, rElements[i].x - (eSize / 2) + (eSize / 10), rElements[i].y - (eSize / 2) + eSize / 2);
+					if(eSize > 49) {
+						pt.font = "8px Arial";
+						pt.fillText(rElements[i].name, rElements[i].x - (eSize / 2) + 5, rElements[i].y - (eSize / 2) + (eSize / 2 + eSize / 10));
 					}
 				}
 
@@ -175,11 +183,27 @@
 
 								if(copyofReaction.length == 0) {
 									console.log("found match");
+
 									var c = reactions[i].molecule;
 
-									Ti.API.log(c);
+									//		Ti.API.log(c);
 									ready = 1;
-									v.play();
+								//	video.src = 'bbb.ogg';
+								//	video.type = "video/ogg";
+								
+								//for apple needs mp4
+									video.src= 'bbb.mp4';
+									video.type="video/mp4";
+									console.log(WIDTH + " " + HEIGHT);
+									
+									var left = ((rAreaX + rAreaY + eSize)).toFixed(0);
+									var top = (rAreaY).toFixed(0);
+									console.log(top+ " "+ left);
+
+								//super duper ghetto move
+									video.style.top = (top.toString()+"px");
+									video.style.left = (left.toString()+"px");
+									video.play();
 									playVideo(c);
 									break;
 								} else
@@ -197,11 +221,11 @@
 						congrats = congrats + c;
 					}
 
-					pt.font = "25px Arial";
+					pt.font = "15px Arial";
 					pt.fillStyle = "black";
-					pt.fillText(congrats, eSize*4, eSize);
-					pt.fillRect((rAreaX+rAreaY+eSize)-2, rAreaY-2, rAreaW+4, rAreaH+4);
-					pt.drawImage(v, (rAreaX+rAreaW+eSize), rAreaY, rAreaW, rAreaH);
+					pt.fillText(congrats, eSize * 4, eSize);
+				//	pt.fillRect((rAreaX + rAreaY + eSize) - 2, rAreaY - 2, rAreaW + 4, rAreaH + 4);
+					//	pt.drawImage(v, (rAreaX+rAreaW+eSize), rAreaY, rAreaW, rAreaH);
 					playing = 1;
 
 				}
@@ -303,7 +327,7 @@
 				mouseIsDown = 0;
 				for( i = 0; i < elements.length; i++) {
 					if(elements[i].dragok == true) {
-						if(canX > rAreaX && canX < rAreaX+rAreaW && canY > rAreaY && canY < rAreaY+rAreaH) {
+						if(canX > rAreaX && canX < rAreaX + rAreaW && canY > rAreaY && canY < rAreaY + rAreaH) {
 
 							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
 							rElements.push(r);
@@ -319,8 +343,8 @@
 				}
 				for( i = 0; i < rElements.length; i++) {
 					if(rElements[i].dragok == true) {
-		
-						if(rElements[i].x <rAreaX  || rElements[i].x > rAreaX+rAreaW || rElements[i].y < rAreaY || rElements[i].y >rAreaY+rAreaH) {
+
+						if(rElements[i].x < rAreaX || rElements[i].x > rAreaX + rAreaW || rElements[i].y < rAreaY || rElements[i].y > rAreaY + rAreaH) {
 
 							rElements.splice(i, 1);
 						} else {
@@ -337,7 +361,7 @@
 				// no touch to track, so just show state
 				for( i = 0; i < elements.length; i++) {
 					if(elements[i].dragok == true) {
-						if(canX > rAreaX && canX < rAreaX+rAreaW && canY > rAreaY && canY < rAreaY+rAreaH) {
+						if(canX > rAreaX && canX < rAreaX + rAreaW && canY > rAreaY && canY < rAreaY + rAreaH) {
 
 							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
 							rElements.push(r);
@@ -353,7 +377,7 @@
 				for( i = 0; i < rElements.length; i++) {
 					if(rElements[i].dragok == true) {
 
-							if(rElements[i].x <rAreaX  || rElements[i].x > rAreaX+rAreaW || rElements[i].y < rAreaY || rElements[i].y >rAreaY+rAreaH) {
+						if(rElements[i].x < rAreaX || rElements[i].x > rAreaX + rAreaW || rElements[i].y < rAreaY || rElements[i].y > rAreaY + rAreaH) {
 
 							rElements.splice(i, 1);
 						} else {

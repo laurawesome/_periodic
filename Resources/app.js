@@ -8,12 +8,31 @@ Titanium.UI.setBackgroundColor('#000');
 //
 // create base UI tab and root window
 //
-var webWin = Titanium.UI.createWebView({url:'/index.html'});
+var webWin = Titanium.UI.createWebView({
+	
+	url:'/index.html', 
+	enableZoomControls:false, 
+	scalesPageToFit:true,
+	statusBarHidden: true, 
+	showScrollbars: false
+	});
+	
 var win1 = Titanium.UI.createWindow({  
-      backgroundColor:'#fff'
+	
+	  navBarHidden: true,  
+      backgroundColor:'#fff', 
+      touchEnabled: true, 
+      //scalesPageToFit:true, 
+      fullscreen:true, 
+      statusBarHidden: true
 });
+win1.orientationModes = [
 
+    Titanium.UI.LANDSCAPE_LEFT,
+    Titanium.UI.LANDSCAPE_RIGHT,
+
+];
 win1.add(webWin);
-win1.open();
+win1.open({modal:true});
 
 
