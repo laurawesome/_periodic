@@ -40,7 +40,6 @@
 	<true/>
         <key>CFBundleIconFiles</key>
         <array>
-	<string>atom-hi.png</string>
 </array>
 
         <key>UISupportedInterfaceOrientations~ipad</key>

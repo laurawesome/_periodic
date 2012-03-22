@@ -1,0 +1,156 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* _periodic_mobile */ = {
+		activeExec = 0;
+		executables = (
+			D3F87CCF151573D500B5C34D /* _periodic_mobile */,
+		);
+	};
+	24D8E3B5119B9D8A00F8CAA6 /* _periodic_mobile-iPad */ = {
+		activeExec = 0;
+		executables = (
+			D3F87CD0151573D500B5C34D /* _periodic_mobile-iPad */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = D3F87CCF151573D500B5C34D /* _periodic_mobile */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* _periodic_mobile */;
+		codeSenseManager = D3F87CD9151573DF00B5C34D /* Code sense */;
+		executables = (
+			D3F87CCF151573D500B5C34D /* _periodic_mobile */,
+			D3F87CD0151573D500B5C34D /* _periodic_mobile-iPad */,
+			D3F87CD1151573D500B5C34D /* _periodic_mobile-universal */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					535,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 353727445;
+			PBXWorkspaceStateSaveDate = 353727445;
+		};
+		sourceControlManager = D3F87CD8151573DF00B5C34D /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	D3F87CCF151573D500B5C34D /* _periodic_mobile */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = _periodic_mobile;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	D3F87CD0151573D500B5C34D /* _periodic_mobile-iPad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "_periodic_mobile-iPad";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	D3F87CD1151573D500B5C34D /* _periodic_mobile-universal */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "_periodic_mobile-universal";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	D3F87CD8151573DF00B5C34D /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	D3F87CD9151573DF00B5C34D /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	DABB369A12E8CB280026A6EA /* _periodic_mobile-universal */ = {
+		activeExec = 0;
+		executables = (
+			D3F87CD1151573D500B5C34D /* _periodic_mobile-universal */,
+		);
+	};
+}

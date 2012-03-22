@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		
+		<!-- GO TO CHECKREACTIONS functions to switch between web and ipad -->
 		<meta charset="utf-8" />
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
@@ -13,6 +15,7 @@
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		   <STYLE type="text/css">  body { background-color: #000; overflow:hidden; }    </STYLE>
 		<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
 	</head>
 	<body onload="init();">
@@ -22,10 +25,7 @@
 			<canvas id="canvas" >
 				your browser does not support the canvas tag
 			</canvas>
-			<!--	<video id="vid" controls width="270"   style="visibility: hidden;">
-			<source src="bbb.ogg" type='video/ogg' >
-			<source src="bbb.mp4" type='video/mp4' >
-			</video> -->
+
 		</div>
 		<script type="text/javascript">
 			var canvas;
@@ -42,7 +42,7 @@
 			//	video.addEventListener('loadeddata', init, false);
 
 			video.style.position = 'absolute';
-
+			
 			var canX;
 			var canY;
 			var mouseIsDown = 0;
@@ -58,7 +58,7 @@
 			var rAreaH;
 
 			function init() {
-				//
+	
 				console.log('init');
 				setInterval(playVideo, 20);
 				canvas = document.getElementById("canvas");
@@ -73,8 +73,9 @@
 
 				video.height = rAreaH;
 				video.width = rAreaW;
+			
 
-				readXML();
+				readElements();
 				readReactions();
 				draw();
 				video.addEventListener('ended', movieEnded, false);
@@ -94,43 +95,16 @@
 				pt.clearRect(0, 0, WIDTH, HEIGHT);
 			}
 
-			function movieEnded() {
-				ready = 0;
-				rElements.splice(0, rElements.length);
-				draw();
-				playing = 0;
-				congrats = "Congratulations you found ";
-				video.style.top = (WIDTH.toString() +"px");
-				video.style.left=(HEIGHT.toString()+"px");
-			}
-
-			function checkOrientation() {
-
-				elements.splice(0, elements.length);
-				rElements.splice(0, elements.length);
-				WIDTH = window.innerWidth;
-				HEIGHT = window.innerHeight;
-				pt.canvas.width = window.innerWidth;
-				pt.canvas.height = window.innerHeight;
-				eSize = (window.innerWidth / 20);
-				rAreaX = eSize;
-				rAreaY = eSize * 8;
-				rAreaW = eSize * 8;
-				rAreaH = eSize * 4;
-				readXML();
-				draw();
-			}
-
 			function draw() {
 				clear();
-
+				pt.strokeStyle= "white";
 				pt.strokeRect(rAreaX, rAreaY, rAreaW, rAreaH);
-
+				pt.globalAlpha=0.75;
 				//console.log('drawing ' + elements.length);
 				for(var i = 0; i < elements.length; i++) {
 					pt.fillStyle = rgb(elements[i].red, elements[i].green, elements[i].blue);
 					pt.fillRect(elements[i].x - (eSize / 2), elements[i].y - (eSize / 2), eSize - 1, eSize - 1);
-					pt.fillStyle = "black";
+					pt.fillStyle = "white";
 					pt.font = "15px Arial";
 					pt.fillText(elements[i].symbol, elements[i].x - (eSize / 2) + eSize / 10, elements[i].y - (eSize / 2) + eSize / 2);
 					if(eSize > 49) {
@@ -143,7 +117,7 @@
 					//
 					pt.fillStyle = rgb(rElements[i].red, rElements[i].green, rElements[i].blue);
 					pt.fillRect(rElements[i].x - (eSize / 2), rElements[i].y - (eSize / 2), eSize - 1, eSize - 1);
-					pt.fillStyle = "black";
+					pt.fillStyle = "white";
 					pt.font = "15px Arial";
 					pt.fillText(rElements[i].symbol, rElements[i].x - (eSize / 2) + (eSize / 10), rElements[i].y - (eSize / 2) + eSize / 2);
 					if(eSize > 49) {
@@ -177,7 +151,7 @@
 								//	console.log(reactions[i].e);
 
 								copyofReaction.splice(j, 1);
-
+ 
 								//	console.log("removed " + listofElements[k].symbol);
 								//	console.log("left " + copyofReaction.length);
 
@@ -188,21 +162,25 @@
 
 									//		Ti.API.log(c);
 									ready = 1;
-								//	video.src = 'bbb.ogg';
-								//	video.type = "video/ogg";
+									
+									//for Firefox
+									//video.src = '31.ogv';
+									//video.type = "video/ogg";
 								
 								//for apple needs mp4
-									video.src= 'bbb.mp4';
+									video.src= '31.m4v';
 									video.type="video/mp4";
-									console.log(WIDTH + " " + HEIGHT);
+									//console.log(WIDTH + " " + HEIGHT);
 									
 									var left = ((rAreaX + rAreaY + eSize)).toFixed(0);
 									var top = (rAreaY).toFixed(0);
-									console.log(top+ " "+ left);
+									//console.log(top+ " "+ left);
 
 								//super duper ghetto move
+								//alert( top + " " + left);
 									video.style.top = (top.toString()+"px");
 									video.style.left = (left.toString()+"px");
+									video.style.visible= 'hidden';
 									video.play();
 									playVideo(c);
 									break;
@@ -222,7 +200,7 @@
 					}
 
 					pt.font = "15px Arial";
-					pt.fillStyle = "black";
+					pt.fillStyle = "white";
 					pt.fillText(congrats, eSize * 4, eSize);
 				//	pt.fillRect((rAreaX + rAreaY + eSize) - 2, rAreaY - 2, rAreaW + 4, rAreaH + 4);
 					//	pt.drawImage(v, (rAreaX+rAreaW+eSize), rAreaY, rAreaW, rAreaH);
@@ -231,6 +209,22 @@
 				}
 
 			}
+			
+		function movieEnded() {
+			
+				ready = 0;
+				rElements.splice(0, rElements.length);
+				draw();
+				playing = 0;
+				congrats = "Congratulations you found ";
+				video.style.top = (WIDTH.toString() +"px");
+				video.style.left=(HEIGHT.toString()+"px");
+				//video.hidden= 'true';
+			}
+			
+			///////////////////////////////////////////////////////////
+			//init stuff
+			/////////////////////////////////////////////////////////
 
 			function readReactions() {
 				if(window.XMLHttpRequest) {
@@ -252,7 +246,7 @@
 				}
 			}
 
-			function readXML() {
+			function readElements() {
 				if(window.XMLHttpRequest) {
 					xmlhttp = new XMLHttpRequest();
 				}
@@ -277,6 +271,9 @@
 				}
 
 			}
+			/////////////////////////////////////////////////////////////////////////////
+			//Classes
+			////////////////////////////////////////////////////////////////////////////
 
 			function Reaction(e, m) {
 				this.e = e.toString();
@@ -322,7 +319,9 @@
 				var f = Math.floor;
 				return "rgb(" + f(r) + "," + f(g) + "," + f(b) + ")";
 			}
-
+			///////////////////////////////////////////////////////////
+			//mouse interactions
+			/////////////////////////////////////////////////////////
 			function mouseUp() {
 				mouseIsDown = 0;
 				for( i = 0; i < elements.length; i++) {
@@ -330,7 +329,9 @@
 						if(canX > rAreaX && canX < rAreaX + rAreaW && canY > rAreaY && canY < rAreaY + rAreaH) {
 
 							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
+							r.dragok=false;
 							rElements.push(r);
+					
 						}
 						elements[i].x = elements[i].pX;
 						elements[i].y = elements[i].pY;
@@ -356,45 +357,18 @@
 				showPos();
 			}
 
-			function touchUp() {
-				mouseIsDown = 0;
-				// no touch to track, so just show state
-				for( i = 0; i < elements.length; i++) {
-					if(elements[i].dragok == true) {
-						if(canX > rAreaX && canX < rAreaX + rAreaW && canY > rAreaY && canY < rAreaY + rAreaH) {
 
-							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
-							rElements.push(r);
-						}
-						elements[i].x = elements[i].pX;
-						elements[i].y = elements[i].pY;
-					}
-					elements[i].dragok = false;
-				}
-				if(rElements.length > 1) {
-					checkReactions();
-				}
-				for( i = 0; i < rElements.length; i++) {
-					if(rElements[i].dragok == true) {
 
-						if(rElements[i].x < rAreaX || rElements[i].x > rAreaX + rAreaW || rElements[i].y < rAreaY || rElements[i].y > rAreaY + rAreaH) {
-
-							rElements.splice(i, 1);
-						} else {
-							rElements[i].dragok = false;
-						}
-
-					}
-				}
-				showPos();
-			}
-
-			function mouseDown() {
+			function mouseDown(e) {
+			
 				mouseIsDown = 1;
+				canX = e.pageX - canvas.offsetLeft;
+				canY = e.pageY - canvas.offsetTop;
 
 				for( i = 0; i < rElements.length; i++) {
+					
 					if(rElements[i].dragok == false) {
-						console.log("mouse: " + canX + " " + canY + " element " + rElements[i].x + " " + rElements[i].y);
+						
 						if(canX < rElements[i].x + eSize / 2 && canX > rElements[i].x - eSize / 2 && canY < rElements[i].y + eSize / 2 && canY > rElements[i].y - eSize / 2) {
 
 							rElements[i].pX = rElements[i].x;
@@ -410,6 +384,7 @@
 				}
 				for( i = 0; i < elements.length; i++) {
 					if(elements[i].dragok == false) {
+						
 						if(canX < elements[i].x + eSize / 2 && canX > elements[i].x - eSize / 2 && canY < elements[i].y + eSize / 2 && canY > elements[i].y - eSize / 2) {
 							elements[i].pX = elements[i].x;
 							elements[i].pY = elements[i].y;
@@ -423,43 +398,9 @@
 					}
 				}
 
-				mouseXY();
+				mouseXY(e);
 			}
-
-			function touchDown() {
-				mouseIsDown = 1;
-				for( i = 0; i < rElements.length; i++) {
-					if(rElements[i].dragok == false) {
-						if(canX < rElements[i].x + eSize / 2 && canX > rElements[i].x - eSize / 2 && canY < rElements[i].y + eSize / 2 && canY > rElements[i].y - eSize / 2) {
-
-							rElements[i].pX = rElements[i].x;
-							rElements[i].pY = rElements[i].y;
-
-							rElements[i].x = canX;
-							rElements[i].y = canY;
-
-							rElements[i].dragok = true;
-
-						}
-					}
-				}
-				for( i = 0; i < elements.length; i++) {
-					if(elements[i].dragok == false) {
-						if(canX < elements[i].x + eSize / 2 && canX > elements[i].x - eSize / 2 && canY < elements[i].y + eSize / 2 && canY > elements[i].y - eSize / 2) {
-							elements[i].pX = elements[i].x;
-							elements[i].pY = elements[i].y;
-
-							elements[i].x = canX;
-							elements[i].y = canY;
-
-							elements[i].dragok = true;
-
-						}
-					}
-				}
-				touchXY();
-			}
-
+			
 			function mouseXY(e) {
 				if(!e)
 					var e = event;
@@ -486,6 +427,86 @@
 				}
 
 			}
+			
+			///////////////////////////////////////////////////////////
+			//touch interactions
+			/////////////////////////////////////////////////////////
+			
+			function touchUp() {
+				mouseIsDown = 0;
+				// no touch to track, so just show state
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == true) {
+						if(canX > rAreaX && canX < rAreaX + rAreaW && canY > rAreaY && canY < rAreaY + rAreaH) {
+
+							var r = new rElement(elements[i].pX, elements[i].pY, elements[i].x, elements[i].y, elements[i].red, elements[i].green, elements[i].blue, elements[i].name, elements[i].symbol);
+							r.dragok=false;
+							rElements.push(r);
+						}
+						elements[i].x = elements[i].pX;
+						elements[i].y = elements[i].pY;
+					}
+					elements[i].dragok = false;
+				}
+				if(rElements.length > 1) {
+					checkReactions();
+				}
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == true) {
+
+						if(rElements[i].x < rAreaX || rElements[i].x > rAreaX + rAreaW || rElements[i].y < rAreaY || rElements[i].y > rAreaY + rAreaH) {
+
+							rElements.splice(i, 1);
+						} else {
+							rElements[i].dragok = false;
+						}
+
+					}
+				}
+				showPos();
+			}
+
+			function touchDown(e) {
+	
+				var e = event;
+		
+				canX = e.targetTouches[0].pageX - canvas.offsetLeft;
+				canY = e.targetTouches[0].pageY - canvas.offsetTop;
+			//	alert(canX + "  "+ canY);
+				mouseIsDown = 1;
+				for( i = 0; i < rElements.length; i++) {
+					if(rElements[i].dragok == false) {
+						if(canX < rElements[i].x + eSize / 2 && canX > rElements[i].x - eSize / 2 && canY < rElements[i].y + eSize / 2 && canY > rElements[i].y - eSize / 2) {
+
+							rElements[i].pX = rElements[i].x;
+							rElements[i].pY = rElements[i].y;
+
+							rElements[i].x = canX;
+							rElements[i].y = canY;
+
+							rElements[i].dragok = true;
+
+						}
+					}
+				}
+				for( i = 0; i < elements.length; i++) {
+					if(elements[i].dragok == false) {
+						if(canX < elements[i].x + eSize / 2 && canX > elements[i].x - eSize / 2 && canY < elements[i].y + eSize / 2 && canY > elements[i].y - eSize / 2) {
+							elements[i].pX = elements[i].x;
+							elements[i].pY = elements[i].y;
+
+							elements[i].x = canX;
+							elements[i].y = canY;
+
+							elements[i].dragok = true;
+
+						}
+					}
+				}
+				touchXY(e);
+			}
+
+
 
 			function touchXY(e) {
 				if(!e)
